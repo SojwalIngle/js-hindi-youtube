@@ -77,3 +77,33 @@ console.log(typeof myFunction);  //function but commnly says object function
 
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack and Heap
+
+
+// Primative datatype (Stack Memory)
+// Non-Primative datatype(Heap Memory)
+
+let myYoutubeName = "Sojwal"
+
+let anothername = myYoutubeName;
+anothername = "ChaiAurCode"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+
+let userOne = {
+       email : "User@google.com",
+       upi: "user@ybl"
+}
+
+let UserTwo = userOne
+
+UserTwo.email = "sojwal@google.com"
+console.log(userOne.email);
+console.log(UserTwo.email);
+
+
+
