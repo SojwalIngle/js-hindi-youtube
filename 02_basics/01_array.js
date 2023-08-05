@@ -1,0 +1,47 @@
+//array
+
+const myArr = [1, 2, 3, 4, 5]
+
+const myHero = ["bheem" , "Doraemon" , "Nobita"]
+
+const myArr22 = new Array(1,2,3,4,5);
+
+// console.log(myArr[3]);
+
+// Array methods
+
+// myArr.push(6);
+// myArr.push(7);
+// myArr.pop();
+
+// myArr.unshift(9)  //[ 9, 1, 2, 3, 4, 5 ]
+// myArr.shift()  //[ 1, 2, 3, 4, 5 ]
+
+
+// console.log(myArr.includes(4));
+// console.log(myArr.indexOf(9)); //-1
+// console.log(myArr.indexOf(3));
+
+
+const newArr = myArr.join()
+
+
+// console.log(myArr);
+// console.log(newArr);
+
+
+
+// slice , splice
+
+console.log("A " , myArr);
+
+const myn1 = myArr.slice(1,3) //in slice only start is including and end is excluding
+console.log(myn1);
+console.log("B " , myArr);
+
+const myn2 = myArr.splice(1,3) //in splice it manimulate original array it removes that ranges
+
+console.log(myn2);
+console.log("C " , myArr);
+
+
