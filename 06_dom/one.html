@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <div >
+        <h1 id="title" class="heading">Dom learning on chai aur code <span style="display:none">Test text</span></h1>
+
+        <h1>Lorem, ipsum dolor.</h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type ="password">
+
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+window = > document => Html 
+                     1. head =>  1. title => text node    2. meta => attribute
+                     2. body =>  div => h1 , p  -->
+
+
+                     
+ <!-- if you want to show all after hidden also the use textcontent or else use innerText                    -->
+<!-- title.textContent
+'Dom learning on chai aur code Test text'
+
+title.innerText
+'Dom learning on chai aur code' -->
+
+<!-- title.innerHTML
+'Dom learning on chai aur code <span style="display:none">Test text</span>' -->
+
+
+<!-- document.querySelector('input[type="password"]')
+<input type=​"password">​ -->
+
+<!-- document.querySelector('ul')
+<ul>​…​</ul>​ -->
+
+
+<!-- myUl.querySelector('li')
+<li>​…​</li>​::marker​"one"</li>​ -->
+
+
+<!-- document.querySelectorAll('li')
+{
+    "0": {},
+    "1": {},
+    "2": {}
+} -->
+
+
+<!-- const tempLiList = document.querySelectorAll('li');
+tempLiList[0].style.color = 'green' -->
+
+<!-- tempLiList.forEach( (i) => { 
+    i.style.backgroundColor = 'green'
+}) -->
+
+
+
+<!-- Note - when you use document.querySelectorAll() then it returns nodelist nnot html collection
+it is not an array but it behaves like an array -->
+
+<!-- ex -->
+
+<!-- const tempLiList = document.querySelectorAll('li');
+tempLiList[0].style.color = 'green' -->
+
+
+
+<!-- document.getElementsByClassName('list-item')
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+0
+: 
+li.list-item
+1
+: 
+li.list-item
+2
+: 
+li.list-item
+3
+: 
+li.list-item
+length
+: 
+4
+[[Prototype]]
+: 
+HTMLCollection -->
+
+
+
+<!-- 
+convert html collection into array
+Array.from(temp)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item] -->
+
+
+
+
+
