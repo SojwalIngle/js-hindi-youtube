@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur js</title>
+</head>
+<body>
+    <div id="timer" style="padding : 5px;text-align:center;width: 20%;height:30px;color:orange ; font-size: 30px; font-weight: 700;"></div>
+    
+    
+    <h1>Chia aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    
+    
+</body>
+<script>
+
+    let time = document.getElementById('timer');
+    let start = document.getElementById('start')
+    let stop = document.getElementById('stop');
+    let intervalID = '';
+
+    setInterval( () => {
+        let date = new Date().toLocaleTimeString();
+        time.innerHTML = date;
+    },1000); 
+
+    const sayDate = function () {
+      console.log("hitesh" ,new Date().toLocaleDateString());    
+    }
+
+    start.addEventListener('click' , () => {
+        console.log("process start");
+         intervalID = setInterval(sayDate, 1000 , "hi")
+    })
+
+    stop.addEventListener('click' , () => {
+        console.log("process stop");
+        clearInterval(intervalID)
+    })
+
+   
+   
+
+
+    
+
+</script>
+
+</html>
+ 
+

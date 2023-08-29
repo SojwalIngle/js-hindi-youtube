@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <div id="timer" style="padding : 5px;text-align:center;width: 20%;height:30px;color:orange ; font-size: 30px; font-weight: 700;"></div>
+    
+    
+    <h1>Chia aur code</h1>
+    <button id="stop">Stop</button>
+
+    
+    
+</body>
+<script>
+
+    let time = document.getElementById('timer');
+
+    setInterval( () => {
+        let date = new Date().toLocaleTimeString();
+        time.innerHTML = date;
+    },1000); 
+
+    const sayHitesh = () => {
+        console.log("sojwal");
+    } 
+
+    const changeText = () => {
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+
+         
+   const changeMe =  setTimeout(changeText , 2000);
+
+ 
+   document.querySelector('#stop').addEventListener('click' , () => {
+       clearTimeout(changeMe)
+       console.log("stopped");
+   })
+
+
+</script>
+
+</html>
+ 
+
