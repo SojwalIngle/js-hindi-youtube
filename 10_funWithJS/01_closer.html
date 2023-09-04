@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+
+//lexical scoping
+
+//   function init() {
+//       let name = "Mozilla"; 
+     
+//       function displayName() {
+//         console.log(name); 
+//       }
+
+//       displayName();
+//    }
+//    init();
+
+
+
+function outer(){
+    let username = "hitesh"
+ 
+    function inner(){
+        let scret = "my123"
+        console.log("inner: " , username);
+    }
+    function innerTwo(){
+        console.log("innerTwo" , username);
+        console.log(secet);
+    }
+    inner()
+    innerTwo()
+}
+outer()
+
+console.log("too outer: ",username);
+
+
+// closure
+// function makeFunc() {
+//     const name = "Mozilla";
+//      function displayName() {
+//          console.log(name);
+//       }
+//       return displayName;
+// }
+
+// const myFunc = makeFunc();
+// myFunc();
+
+
+
+
+
+</script>
+
+
+<script>
+
+    function clickHandlar(color) {
+        // document.body.style.backgroundColor =   `${color}`
+
+        return function(){
+            document.body.style.backgroundColor =  `${color}`
+        }
+    }
+    
+    document.getElementById('orange').onclick = clickHandlar("orange")
+    document.getElementById('green').onclick = clickHandlar("green")
+
+
+
+</script>
+
+</html>
